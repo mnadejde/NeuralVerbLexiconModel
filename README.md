@@ -4,6 +4,13 @@ Neural Verb Lexicon Model
 Scripts for extracting context of source verbs (either window-based or following dependency relations).
 Context is used as input to a feed-forward neural network (NPLM).
 
+Different contexts for a Neural Verb Lexicon Model were evaluated for reranking nbest list produced by syntax-based MT system. Paper presented at IWSLT:
+
+Maria Nadejde and Alexandra Birch and Philipp Koehn (2016): A Neural Verb Lexicon Model with Source-side Syntactic Context for String-to-Tree Machine Translation. Proceedings of the International Workshop on Spoken Language Translation (IWSLT). Seattle, Washington, USA
+
+http://workshop2016.iwslt.org/downloads/IWSLT_2016_paper_10.pdf
+
+
 extract_verb_context.py:
 
 Different factors can be defined via options (word, lemma, pos, dependency relation, particles).
