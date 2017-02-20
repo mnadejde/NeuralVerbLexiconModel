@@ -2,7 +2,7 @@ Neural Verb Lexicon Model
 =========================
 
 Scripts for extracting context of source verbs (either window-based or following dependency relations).
-Context is used as input to a feed-forward neural network (NPLM).
+Context is used as input to a feed-forward neural network (NPLM http://nlg.isi.edu/software/nplm/) to predict the target verb.
 
 Different contexts for a Neural Verb Lexicon Model were evaluated for reranking nbest list produced by syntax-based MT system. Paper presented at IWSLT:
 
