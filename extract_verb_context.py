@@ -349,7 +349,7 @@ class DepContext:
       self.win_prep_grandchildren *= 2 # twice as many words since we add the preposition to the prepositional modifier
     self.win_total = self.win_parent + self.win_children + self.win_grandchildren + self.win_prep_grandchildren + self.win_siblings #  + 1 -> for souce token
 
-# PROBLEM: the auxiliary verb is considered the head and the main verb the child. all the arguments get attached to the auxiliary verb MOTHER FUCKER
+# PROBLEM: the auxiliary verb is considered the head and the main verb the child. all the arguments get attached to the auxiliary verb
 def get_verb_dep_context(token, win_parent, win_children, win_grandchildren, win_prep_grandchildren, win_siblings, separate_pp, separate_avz, separate_children, factor, factor_name):
   context = []
   #context += map(factor, [token])
@@ -386,7 +386,6 @@ def get_verb_dependents_context1(token, dep_win): #dep_win, dep_count):
   # add parent to context
   if token.head and token.head.position !=0 :
     head = token.head
-    #print "BLAAA",token.word, head.word
     context.append(head.word)
     # add siblings to context
     for child,r in head.get_dependents():
